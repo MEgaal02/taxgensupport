@@ -1,8 +1,13 @@
-# Mark specific files as a language
+# Force GitHub to detect languages correctly
 *.py linguist-language=Python
-*.js linguist-language=JavaScript
 *.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
 
-# Exclude files from language stats
+# Ignore virtual environment, media, database
 myvenv/** linguist-vendored
+media/** linguist-vendored
+*.sqlite3 linguist-vendored
+
+# Optional: documentation
 *.md linguist-documentation
