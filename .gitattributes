@@ -1,0 +1,8 @@
+# Mark specific files as a language
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
+*.html linguist-language=HTML
+
+# Exclude files from language stats
+myvenv/** linguist-vendored
+*.md linguist-documentation
